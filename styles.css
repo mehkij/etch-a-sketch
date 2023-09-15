@@ -1,0 +1,16 @@
+#grid-container {
+  width: 512px;
+  height: 512px;
+  border: 2px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#grid-container div {
+  flex-grow: 1;
+  flex-basis: calc(6.25% - 1px);
+  border: 1px solid black;
+  background-color: white;
+  box-sizing: border-box;
+}
