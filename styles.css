@@ -1,3 +1,9 @@
+* {
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -6,10 +12,17 @@ body {
 }
 
 #grid-container {
-  height: 500px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 535px;
   width: 500px;
   border: 2px solid black;
   box-shadow: 3px 3px 5px grey;
+}
+
+#grid-container div {
+  border: 1px solid wheat;
 }
 
 #clear-grid {
