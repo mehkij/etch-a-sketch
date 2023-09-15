@@ -9,8 +9,5 @@
 
 #grid-container div {
   flex-grow: 1;
-  flex-basis: calc(6.25% - 1px);
-  border: 1px solid black;
   background-color: white;
-  box-sizing: border-box;
 }
