@@ -21,4 +21,9 @@ clearButton.addEventListener("click", () => {
 
 // make it so when you hover your mouse over the grid, it fills the grid with the color black
 
-
+gridDiv.addEventListener("mouseover", () => {
+  const gridSection = document.querySelector(".grid");
+  if (true) {
+    gridSection.style.cssText = "background-color: black";
+  }
+});
