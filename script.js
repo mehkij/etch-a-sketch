@@ -43,6 +43,17 @@ resizeButton.addEventListener("click", () => {
   newGrid();
 });
 
+// add a button that allows the user to clear the grid
+
+const resetButton = document.querySelector("#reset");
+
+// calculates the square root of the number of children in the container (which equals the size of the grid), then recreates the grid
+// this works because we can take the sqrt of the total # of cells (divs) to figure out how many rows and columns it has. for example: sqrt(9) = 3; you can return the 3 back to the createGrid function to get a 3x3 (9) grid.
+resetButton.addEventListener("click", () => {
+  createGrid(container.children.length ** 0.5);
+});
+
+
 // extra credit challenge: add a "rainbow" option to where every drag of the mouse randomizes the square's RGB value
 // extra credit challenge: make it so each interaction with the square adds 10% more of a color to the square (should have a completely full square after 10 interactions with it)
 
