@@ -20,19 +20,28 @@ function createGrid(size) {
 
 // allow for user input for grid size
 
-const gridSize = prompt("Enter the grid size (Please choose a size less than or equal to 100):");
-const size = parseInt(gridSize);
+function newGrid() {
 
-if (!isNaN(size)) {
-  createGrid(size);
-} else {
-  alert("Invalid input. Please enter a valid number for the grid size.");
+  const gridSize = prompt("Enter the grid size (Please choose a size less than or equal to 100):");
+  const size = parseInt(gridSize);
+
+  if (!isNaN(size)) {
+    createGrid(size);
+  } else {
+    alert("Invalid input. Please enter a valid number for the grid size.");
+  }
 }
 
-createGrid(gridSize);
+newGrid();
 
 // set up a "hover" effect so that the grid divs change color when mouse passes over them
 // add a button that prompts the user, asking them for a number of squares (grid divs) to generate (using a function) (make sure they occupy the SAME TOTAL SPACE AS BEFORE WITHIN THE CONTAINER)(limit: 100 squares)
+
+const resizeButton = document.querySelector("#change-grid");
+
+resizeButton.addEventListener("click", () => {
+  newGrid();
+});
 
 // extra credit challenge: add a "rainbow" option to where every drag of the mouse randomizes the square's RGB value
 // extra credit challenge: make it so each interaction with the square adds 10% more of a color to the square (should have a completely full square after 10 interactions with it)
