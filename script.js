@@ -52,8 +52,3 @@ const resetButton = document.querySelector("#reset");
 resetButton.addEventListener("click", () => {
   createGrid(container.children.length ** 0.5);
 });
-
-
-// extra credit challenge: add a "rainbow" option to where every drag of the mouse randomizes the square's RGB value
-// extra credit challenge: make it so each interaction with the square adds 10% more of a color to the square (should have a completely full square after 10 interactions with it)
-
