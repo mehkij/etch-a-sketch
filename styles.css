@@ -1,0 +1,18 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#grid-container {
+  height: 500px;
+  width: 500px;
+  border: 2px solid black;
+  box-shadow: 3px 3px 5px grey;
+}
+
+#clear-grid {
+  padding: 12px;
+  margin: 16px;
+}
